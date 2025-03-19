@@ -1,15 +1,10 @@
 // import React from 'react'
-
+import Restaurent from "./component/Basics/Restaurent";
 const App = () => {
   return (
     <>
-    <div>
-      {/* component */}
-      <MyName/>
-
-      <h1  className="myclassname"> welcome to my world {0+3}</h1>
-    </div>
-    <p>Awesome</p>
+   <Restaurent/>
+     
     </>
   )
 };
