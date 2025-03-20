@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import MenuCard from "./MenuCard";
 import "./style.css";
 import Menu from "./menuApi.js";
-
+import Navbar from "./Navbar";
 
 const uniqueList = [...new Set(  Menu.map((curElem) => {
     return curElem.category;
@@ -19,37 +19,7 @@ const Restaurent = () => {
   };
   return (
     <>
-      <nav className="navbar">
-        <div className="btn-group">
-          <button
-            className="btn-group__item"
-            onClick={() => filterItem("breakfast")}
-          >
-            Breakfast
-          </button>
-          <button
-            className="btn-group__item"
-            onClick={() => filterItem("lunch")}
-          >
-            Lunch
-          </button>
-          <button
-            className="btn-group__item"
-            onClick={() => filterItem("evening")}
-          >
-            Evening
-          </button>
-          <button
-            className="btn-group__item"
-            onClick={() => filterItem("dinner")}
-          >
-            Dinner
-          </button>
-          <button className="btn-group__item" onClick={() => setmenuData(Menu)}>
-            All
-          </button>
-        </div>
-      </nav>
+      <Navbar filterItem={filterItem}/>
       <MenuCard menuData={menuData} />
     </>
   );
