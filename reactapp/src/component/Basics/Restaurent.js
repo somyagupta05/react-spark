@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import MenuCard from "./MenuCard";
 import "./style.css";
 import Menu from "./menuApi.js";
-const uniqueList = new setInterval[
-  Menu.map((curElem) => {
+
+
+const uniqueList = [...new Set(  Menu.map((curElem) => {
     return curElem.category;
-  })
-]();
+  }))
+];
 const Restaurent = () => {
   const [menuData, setmenuData] = useState(Menu);
 
