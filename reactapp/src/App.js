@@ -2,12 +2,14 @@
 import Restaurent from "./component/Basics/Restaurent";
 import UseState from "./component/Hooks/useState";
 import { useState } from 'react';
+import UseEffect from "./component/Hooks/useEffect";
 const App = () => {
   return (
     <>
    {/* <Restaurent/> */}
    
-    <useState/>
+    {/* <useState/> */}
+    <useEffect/>
     </>
   )
 };
