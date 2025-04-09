@@ -1,0 +1,58 @@
+## introduction to react js
+1. React.js is a javascript library used for building user interface (UIs) and single-page applications.
+2. created by Jordan Walke at Facebook.
+3. Most popular javascript library for frontend development.
+
+## History of react.js
+1. react.js began as an internal tool for dynamic facebbok components.
+2. created in 2011 but remained private intially.
+3. react.js was open-sourced by jordan walke and tom occhino at JSConfUS 2013.
+4. Released with the belief that its success at facebook could benefit others.
+5. Intially faced criticism for combining javascript and html in single file.
+6. it was widely hated and criticized because of its cobination of javascript and html in single file.
+7. it slowly gained traction and blew up in adoption.
+
+
+## is react.js library or framework ?
+1. react is not a framework. react is a javascript library for building user interfaces.
+2. it is also known as reactjs and react.js, so dont get confused if you read different notation in different places.
+3. react knows only one thing that is to create an awesome UI.
+
+# more about react
+react js is tree of components
+
+## why react js?
+1. react is declarative because it describes what the ui should look like rather than how to achieve it. this makes the code easier to read and maintain as it is more focused on the end result rather than the steps involved in getting there.
+
+# react declarative
+in case of declarative let us consider an example you want to eat panner so you will tell your chef to cook panner as he is well aware of your tase so you dont need to give him instruction  that do that first than this.
+
+function MyComponent({name}){
+  return <div>hello, {name}!</div>;
+}
+
+# js imperative
+i case of imperative if you want to eat panner then you have to give all instruction to chef that first bring panner and tomatos then prepare gravy and put salt and so on.
+
+function MyComponent(name){
+  const element=document.createElement('div');
+  element.textContent=`hello ,${name}!`;
+  return element;
+}
+
+2. here we are manually creating elements,setting their properties, and appending them to the dom.
+
+## how react works?
+component--->instances--->react elements--->dom elemets--->final ui
+
+## why reactjs over vanilla js?
+1. oppose to vanilla js,react has a concept called components which combines all html,css and js by features instead of seperating html,css and js completely.
+
+2. react.js manages updating the dom or document object model with the component written by us.
+
+## why react js?
+1. react is most popular js library for building user interfaces.
+2. component-based architecture
+3. declarative ui
+4. rich ecosystem npm-packages
+5. string community support-online/github
