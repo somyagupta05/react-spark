@@ -63,3 +63,41 @@ component--->instances--->react elements--->dom elemets--->final ui
 3. snake_case
 4. kebab-case
 
+## JSX
+1. it is a syntactical sugar introduced by facebook for writting react.js components easily
+
+
+## components
+In react a component is essentially a js function or class that returns jsx(javascript xml),a syntax extension that allows you to write html. like code inside js. components are the building blocks of any react application, allowing for creation of complex and interactive user interfaces through the assembly of isolated, reusable pieces
+Two ways of components are class based and functional based component
+
+## React Fragments
+1. In react.js , a component cant return multiple elements without a wrapper div.
+2. you can do this to imitiate it: using an Array of elements with keys
+3. return[<P>Ram</p>,<Stron>20</stromg>];
+4. But its tedious to fix react 16 introduced fragments which allow components to return multiple elements without adding extra nodes to the dom.
+5. import {Fragment} from "react";
+return <Fragment> // </Fragment>
+6. Alternatively you can also use its shorthand and syntax;
+7. <> // </>
+
+## why cant we return multiple element at the same time?
+1. as after jsx is compilled it is converted to normal js object, you cant return multiple js object at the same time.
+2. return (jsx(...),jsx(...));
+
+
+## Dynamic values in jsx
+1. you can add any variable of your component in jsx using {} syntax.
+2. function MyComponent()
+{
+  const value='hey';
+  return <p>{value}</p>
+}
+3. jsx allow you to write js expression inside curly braces includes operations, function calls, and other js expression produce a value.
+4. return <div> the result is :{1+2+3} </div>
+
+## conditionals values in jsx
+1. you can either return ajsx early or you can use a ternary oprator for conditionals in jsx.
+2. return <p>{age>=18? "Adult":"Minor"}</p>
+3. return <p> {age>=18&& "you can vote"}</p>
+4. return <p>{username || "guest"}</p>
