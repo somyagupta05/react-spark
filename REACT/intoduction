@@ -56,3 +56,10 @@ component--->instances--->react elements--->dom elemets--->final ui
 3. declarative ui
 4. rich ecosystem npm-packages
 5. string community support-online/github
+
+## Naming Convention
+1. camelCase
+2. PascalCase
+3. snake_case
+4. kebab-case
+
