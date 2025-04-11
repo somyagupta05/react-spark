@@ -110,3 +110,25 @@ Default Import: whe importing a default export, you can name the import whatever
 
 3. Mixed export and import--  a file can have multiple named exports.
 each named export must be explicitly exported.
+
+## Lopping in jsx
+1. we dont have for loops in jsx, so we have to use .map() method of arrays.
+2. return(
+  <ul>
+  {
+    students.map((student)=>(
+      <li key={student}>{student}</li>
+    ))
+  }
+);
+3. react.js will complain if you dont pass key prop to <li>
+4. reactjs uses keys to differentiate each elements, so that it can remove other elements when a student gets added or removed. Dont worry we will  further details later.
+5. we can use array in jsx too. so here students.map return array of jsx which rendered on the page
+
+
+## PROPS
+1. react props(properties) facilitates data transfer from parent to child components.
+2. Data flows unidirectionallly, esuring a clear direction of information in react applications.
+3. Props re immutable, meaning child components cannot modify the data received from parents.
+4. child components access props through their function parameter
+5. you can also pass jsx as props to another component. 
