@@ -101,3 +101,12 @@ return <Fragment> // </Fragment>
 2. return <p>{age>=18? "Adult":"Minor"}</p>
 3. return <p> {age>=18&& "you can vote"}</p>
 4. return <p>{username || "guest"}</p>
+
+## import export in react js
+1. default export and import-- a file can have only one default export.
+Default Import: whe importing a default export, you can name the import whatever you like.
+
+2. Named export and import -- when importing named exports, the import must match exports names exactly. named imports must be enclosed in curly braces.
+
+3. Mixed export and import--  a file can have multiple named exports.
+each named export must be explicitly exported.
